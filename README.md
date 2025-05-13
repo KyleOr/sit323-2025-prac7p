@@ -1,6 +1,25 @@
-Step 1: Enable Kubernetes in Docker Desktop
-Step 2: Check through terminal if Kubernetes is working, there should be a node listed like docker-desktop
-Step 3: Build Docker image
-Step 4: Create Kubernetes Deployment
-Step 5: Expose the app with a Kubernetes service
-Step 6: Check Docker is pod is running as well as the App itself
+Install MongoDB into the Kubernetes Cluster through MongoDB Deployment + Service 
+
+Create a Persistent Volume for storage 
+
+Deploy MongoDB 6 as a container 
+
+Uses a Secret for username and password 
+
+Exposes MongoDB as a ClusterIP service 
+
+Create a Kubernetes secret called mongo-secret 
+
+Stroe the values under keys mongo-user and mongo-password 
+
+Then deploy the MongoDB to the Kubernetes cluster 
+
+Update the actual application to use MongoDB, use the crendentials from the environment variables and log each calculation into a MongoDB collection
+
+Update deployment.yaml to pass the MongoDB connection details 
+
+Then rebuild the Docker image and restart the deployment 
+
+Ensure server connects to MongoDB prior to running 
+
+Then run tests to demonstrate CRUD 
